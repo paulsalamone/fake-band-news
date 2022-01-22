@@ -1,5 +1,16 @@
+@import url("https://fonts.googleapis.com/css2?family=Krona+One&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
+* {
+  /* border: 1px dotted grey; */
+
+  padding: 0px;
+  margin: 0px;
+}
+
 .App {
   text-align: center;
+  font-family: "PT Sans", Arial, Helvetica, sans-serif;
+  height: 100vh;
 }
 
 .App-logo {
@@ -9,7 +20,7 @@
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+    /* animation: App-logo-spin infinite 20s linear; */
   }
 }
 
@@ -35,4 +46,227 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+a {
+  color: #754fc9;
+}
+
+h1,
+h2 {
+  font-family: "Krona One", Arial, Helvetica, sans-serif;
+}
+
+header {
+  color: white;
+  background-color: rgb(147, 147, 147);
+  display: grid;
+  grid-template-rows: 2fr 35px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  /* border: 1px solid red; */
+}
+
+.logo {
+  width: 200px;
+  height: auto;
+}
+
+.masthead {
+  background-color: black;
+  grid-column: 1/5;
+  display: grid;
+  grid-template: 1fr / 4fr 1fr;
+  align-items: center;
+}
+
+.masthead img {
+  height: 1fr;
+}
+
+.masthead h1 {
+  font-size: 4rem;
+  text-align: left;
+  margin-left: 20px;
+}
+
+nav {
+  /* border: blue 2px solid; */
+  font-family: "Krona One", Arial, Helvetica, sans-serif;
+  display: grid;
+  width: 100%;
+  grid-column: 1 / 5;
+  display: grid;
+  grid-template: 35px / 1fr 1fr 1fr 1fr;
+  align-items: center;
+}
+
+nav li {
+  list-style-type: none;
+  transition: 0.1s;
+}
+
+nav li:hover {
+  transform: translate(-1px, -1px);
+  text-shadow: 2px 2px 4px #00000033;
+  cursor: pointer;
+}
+
+.gradient-span {
+  background-image: linear-gradient(135deg, #3b2667 10%, #bc78ec 100%);
+  color: white;
+  padding: 1px 3px;
+}
+
+/* MAIN STUFF */
+
+main {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.top-section {
+  /* background-color: yellow; */
+  display: grid;
+  grid-template: 1fr / 5fr 1fr;
+}
+
+h4 {
+  background-color: black;
+  color: white;
+  margin-bottom: 5px;
+  padding: 1px 10px;
+  text-align: left;
+}
+.top-story {
+  /* background-color: rgba(255, 0, 0, 0.139); */
+  display: grid;
+  grid-template: 1fr / 3fr 5fr;
+  /* border: 5px solid blue; */
+}
+
+.top-story-image {
+  /* object-fit: cover; */
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 10px;
+  text-align: center;
+  align-items: center;
+}
+
+.top-story-image img {
+  width: 70%;
+  margin-bottom: 10px;
+}
+
+.top-story-image p {
+  width: 60%;
+  font-size: 0.8rem;
+}
+
+.top-story-text {
+  text-align: left;
+  padding: 10px;
+}
+
+.top-story-text h2 {
+  padding: 10px 0px;
+  font-size: 1.8rem;
+  line-height: 130%;
+}
+
+.top-story-text p {
+  font-size: 1.2rem;
+  padding: 10px 0px;
+}
+
+.band-members {
+  /* background-color: red; */
+  display: grid;
+  grid-template: 4fr 40px / 1fr 1fr 1fr 1fr;
+  margin-bottom: 10px;
+  justify-content: space-between;
+  align-items: center;
+  grid-gap: 5px;
+}
+
+.band-members p {
+  grid-column: 1 / 5;
+  text-align: center;
+  font-size: 1rem;
+  font-style: italic;
+}
+
+.fake-ad {
+  border: 1px solid #bbb;
+  margin: 10px;
+  background-color: #eee;
+}
+
+.read-more-div {
+  text-align: right;
+}
+.read-more {
+  color: #754fc9;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.bottom-section {
+  padding: 20px;
+  display: grid;
+  grid-template: 28px 1fr / 1fr;
+}
+
+.reviews-block {
+  display: grid;
+  grid-template: 1fr / 1fr 1fr 1fr;
+  padding: 10px;
+}
+
+.review-card {
+  margin: 10px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  box-shadow: 0 0 5px #00000033;
+  transition: 0.2s;
+}
+
+.review-card:hover {
+  border: 1px solid #bbb;
+  transform: translate(-1px, -1px);
+  box-shadow: 0 0 12px #00000033;
+}
+
+.review-card:active {
+  transform: translate(0px, 0px);
+}
+
+.album-cover {
+  margin: 10px;
+}
+
+.review-artist {
+  font-weight: 900;
+  font-size: 1.4rem;
+}
+
+.review-title {
+  font-weight: 100;
+  font-size: 1.4rem;
+  padding: 3px;
+  text-transform: capitalize;
+}
+
+.review-genre {
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  color: #aaa;
+  letter-spacing: 3px;
+}
+
+.review-text {
+  padding: 10px;
+  text-align: left;
 }
