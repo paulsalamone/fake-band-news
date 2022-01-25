@@ -27,7 +27,7 @@ const TopStory = () => {
     pronounNom = "she";
     pronounPoss = "her";
   } else {
-    pronounNom = "him";
+    pronounNom = "he";
     pronounPoss = "his";
   }
 
